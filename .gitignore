@@ -1,0 +1,14 @@
+# SSH Private Keys - never commit these
+*.pem
+terraform/b9is121-key
+!terraform/b9is121-key.pub
+
+# Terraform state files (contain sensitive data)
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# AWS credentials
+.aws/cd terraform
+credentials.txt
