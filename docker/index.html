@@ -8,7 +8,7 @@
             font-family: Arial, sans-serif;
             background-color: #f4f6f8;
             text-align: center;
-            margin-top: 80px;
+            margin-top: 50px;
             color: #2c3e50;
         }
         .card {
@@ -18,9 +18,7 @@
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        h1 {
-            color: #17A2B8;
-        }
+        h1 { color: #17A2B8; margin-top: 10px; }
         .tag {
             display: inline-block;
             background: #EAF2FC;
@@ -30,14 +28,34 @@
             margin-top: 15px;
             font-size: 14px;
         }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        th { background: #f0f0f0; }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>B9IS121 - Automated Container Deployment</h1>
+        <h4>Dublin Business School</h4>
+        <h1>Assignment 1</h1>
+        <h1>B9IS121 - Docker Container Deployment</h1>
         <p>This page is being served from a Docker container running on AWS.</p>
         <p>Deployed automatically using Terraform + Ansible + Docker</p>
-        <div class="tag">Container: Nginx | Cloud: AWS EC2 | Region: eu-north-1</div>
+
+        <table>
+            <h1>Group Members</h1>
+            <tr><th>#</th><th>Student Name</th><th>Student ID</th></tr>
+            <tr><td>1</td><td>Ahsan Shabbir</td><td>20102960</td></tr>
+            <tr><td>2</td><td>Saif Ullah Malik</td><td>20100856</td></tr>
+            <tr><td>3</td><td>Shamroz Iqbal</td><td>20097811</td></tr>
+            <tr><td>4</td><td>Venkata vamsi Krishna Kondru</td><td>20102016</td></tr>
+        </table>
     </div>
 </body>
 </html>
